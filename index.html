@@ -6,6 +6,12 @@
     <title>Jesse B. S. 2</title>
 </head>
 <body>
-    Text Here lol
+    <center id="waiting-text">Website in progress...</center>
 </body>
+<script>
+
+    let randoms = ["Not yet finished...","Try again next month...","Wait until I finish some projects and try again..."]
+    document.getElementById("waiting-text").innerText = randoms[Math.round(Math.random() * (randoms.length - 1))];
+
+</script>
 </html>
