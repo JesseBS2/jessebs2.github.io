@@ -1,0 +1,127 @@
+﻿#wrapper {
+    place-items: center;
+    margin: 3rem 2rem 0;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+#pfp {
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 128px;
+    width: 128px;
+}
+
+
+.main-button {
+    margin-top: 23px;
+    height: 90px;
+    background: none;
+    border: 3px solid #260714;
+    font-size: larger;
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+    .main-button:hover {
+        cursor: pointer;
+        border: 3px solid #d6e6e8;
+    }
+
+.sub-button {
+    height: 90px;
+    background: none;
+    border: 2px solid #260714;
+    font-size: large;
+    color: white;
+    font-family: Verdana;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    z-index: 5;
+}
+
+    .sub-button:hover {
+        cursor: pointer;
+        border: 2px solid #d6e6e8;
+    }
+
+#name {
+    align-self: center;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#username {
+    align-self: center;
+    margin-top: 0px;
+}
+
+#pronouns {
+    align-self: center;
+}
+
+#bio {
+    margin-top: 0px;
+    font-size: 15px;
+    align-self: center;
+}
+
+#small-buttons {
+    align-self: center;
+    position: absolute;
+    bottom: 0px;
+}
+
+    #small-buttons > a > img {
+        width: 64px;
+        height: 64px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+
+
+body {
+    overflow: hidden;
+    background: linear-gradient(307deg, #96ff1c, #e91cff, #9d00f5, #00c8f5);
+    background-size: 800% 800%;
+    animation: changecolor 24s ease infinite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    cursor: default;
+}
+
+@keyframes changecolor {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

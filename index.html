@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Jesse B. S. 2</title>
+    <meta property="og:title" content="JesseBS2.github.io" />
+    <meta property="og:description" content="Jesse's website. About me, by me, for everyone." />
+    <meta name="theme-color" content="#6600FF">
 </head>
+
 <body>
-    <center id="waiting-text">Website in progress...</center>
+
+    <div style="place-items: center; margin: 25% 25%;" id="wrapper">
+        <center style="font-size: 200%; font-family: monospace; font-weight: bolder; display: flex; flex-direction: column; margin: 0 auto;" id="waiting-text">Website in progress...</center>
+    </div>
+
+    <!-- For an email, use 'a' tag with href "mailto:title@service.com" -->
+    <!-- I'll forget if I don't have this here lol-->
+
 </body>
+
 <script>
-
-    let randoms = ["Not yet finished...","Try again next month...","Wait until I finish some projects and try again..."]
+    let randoms = ["Inactively being worked on...","Not yet finished...","Try again next month...","Wait until I finish some projects and try again...","Waiting for Jesse to code something...","<div style=\"display:none;\">Go Away</div>","Stop refreshing the page!","Loading... Failed :(","Nothing to see here, move along..."]
     document.getElementById("waiting-text").innerText = randoms[Math.round(Math.random() * (randoms.length - 1))];
-
 </script>
 </html>

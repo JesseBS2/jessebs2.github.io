@@ -4,8 +4,44 @@
 <head>
     <meta charset="utf-8" />
     <title>JesseBS2</title>
+    <link src="./style.css" rel="stylesheet" type="text/css" />
+    <meta property="og:title" content="Jesse" />
+    <meta property="og:description" content="Just a dork who wants to make some friends :)" />
+    <meta name="theme-color" content="#6600FF">
 </head>
 <body>
-    <button>PLS WORK</button>
+    <div id="wrapper">
+        <div id="content">
+
+            <p id="name">Jesse</p>
+            <p id="username">JesseBS2</p>
+            <img id="pfp" src="https://cdn.discordapp.com/avatars/596938492752166922/729e29bf32495dbd03d5a4154bbb847a.webp?size=256" />
+            <p id="pronouns">He/Him</p>
+            <p id="bio">Just a dork who wants to make some friends :)</p>
+
+            <a href="https://drive.google.com/file/d/1YQBQPgimMYGObDqJs0BPn5IrIMe9gEvT/view?usp=sharing" class="main-button" id="modpack">Minecraft Mod Collection</a>
+            <a href="" class="main-button">Probably going to link to my adblocker</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="main-button">Super Cool Gift</a>
+            <!-- Script for splitting the modpack link into the Mods and the Resource Pack -->
+            <script>
+                let id = document.getElementById("modpack");
+                id.addEventListener("mouseenter", () => {
+                    id.innerHTML = '<a href="https://drive.google.com/file/d/1YQBQPgimMYGObDqJs0BPn5IrIMe9gEvT/view?usp=sharing" class="sub-button">Mod Collection</a><a href="https://drive.google.com/file/d/1LCx3eJsIF5QS_OTd6sg81LeX8rAzt6Y2/view?usp=sharing" class="sub-button">Resource Pack</a>';
+                });
+
+                id.addEventListener("mouseleave", () => {
+                    id.innerHTML = "Minecraft Mod Collection";
+                });
+
+            </script>
+
+            <div id="small-buttons">
+                <a href="https://github.com/JesseBS2"><img src="./octocat.png" /></a>
+                <a href="https://discord.com/users/596938492752166922"><img src="./clyde.png" /></a>
+                <a href="https://instagram.com/jessebs2"><img src="./instacam.png" /></a>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
